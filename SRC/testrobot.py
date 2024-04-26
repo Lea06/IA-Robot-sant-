@@ -24,9 +24,7 @@ GPIO.setup(IN2, GPIO.OUT)
 GPIO.setup(ENB, GPIO.OUT)
 GPIO.setup(IN3, GPIO.OUT)
 GPIO.setup(IN4, GPIO.OUT)
-GPIO.setup(ldr_pin, GPIO.IN)
-GPIO.setup(trigger_pin, GPIO.OUT)
-GPIO.setup(echo_pin, GPIO.IN)
+
 
 # Initialisation des PWM pour le contrôle de vitesse
 pwm_a = GPIO.PWM(ENA, 100)
@@ -40,3 +38,5 @@ def drive_forward():
     GPIO.output(IN4, GPIO.HIGH)
     pwm_a.start(100)
     pwm_b.start(100)
+    
+drive_forward()
