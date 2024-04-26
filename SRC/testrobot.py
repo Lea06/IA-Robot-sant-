@@ -39,4 +39,11 @@ def drive_forward():
     pwm_a.start(100)
     pwm_b.start(100)
     
-drive_forward()
+def stop():
+    GPIO.output(ENA, GPIO.LOW)
+    GPIO.output(ENB, GPIO.LOW)
+    pwm_a.stop()
+    pwm_b.stop()
+    
+#drive_forward()
+stop()
