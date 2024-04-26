@@ -63,7 +63,7 @@ def sonar_ping():
 
 # Création d'un socket pour écouter les commandes
 serveur = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-serveur.bind(('192.168.0.18', 12345))  # Remplacez l'adresse IP par celle de votre Raspberry Pi
+serveur.bind(('10.38.161.125', 'Raspberry'))  # Remplacez l'adresse IP par celle de votre Raspberry Pi
 serveur.listen(5)
 
 print("En attente de connexions...")
