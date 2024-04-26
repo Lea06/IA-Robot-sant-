@@ -53,7 +53,7 @@ def sonar_ping():
 
 # Server setup for listening to commands
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(('10.38.161.125', 'Raspberry'))
+
 server.listen(5)
 
 print("Waiting for connections...")
