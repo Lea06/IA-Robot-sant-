@@ -40,3 +40,5 @@ def drive_forward():
     GPIO.output(IN4, GPIO.HIGH)
     pwm_a.start(100)
     pwm_b.start(100)
+    
+drive_forward()
